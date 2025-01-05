@@ -1,10 +1,28 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Route, RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+export const appRoutes: Route[] = [
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+  {
+    path: 'home',
+    // component: LayoutComponent,
+    // canActivate: [AuthGuard, ParamedisGuard],
+    // data: {
+    //   layout: 'menu'
+    // },
+    children: [
+      { path: '', loadChildren: () => import('./modules/headers/headers.module').then(m => m.HeadersModule) },
+    ]
+  },
+];
+
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
+// export class AppRoutingModule { }

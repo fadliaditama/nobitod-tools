@@ -6,17 +6,21 @@ import { appRoutes } from './app-routing.module';
 import { HeadersComponent } from './modules/headers/headers.component';
 import { BodyComponent } from './modules/body/body.component';
 import { FooterComponent } from './modules/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadersComponent,
     BodyComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

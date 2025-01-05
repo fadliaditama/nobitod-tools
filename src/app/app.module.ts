@@ -4,11 +4,15 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app-routing.module';
 import { HeadersComponent } from './modules/headers/headers.component';
+import { BodyComponent } from './modules/body/body.component';
+import { FooterComponent } from './modules/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeadersComponent
+    HeadersComponent,
+    BodyComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

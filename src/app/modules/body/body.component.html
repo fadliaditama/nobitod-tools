@@ -1,0 +1,19 @@
+<section class="">
+    <div class="sticky top-0 z-40">
+        <app-headers></app-headers>
+    </div>
+
+    <div class="static">
+        <ng-container *ngIf="route.url === '/home'">
+            ulol
+        </ng-container>
+
+        <ng-container *ngIf="route.url !== '/home'">
+            <router-outlet></router-outlet>
+        </ng-container>
+    </div>
+
+    <div class="fixed bottom-0 z-40">
+        <app-footer></app-footer>
+    </div>
+</section>

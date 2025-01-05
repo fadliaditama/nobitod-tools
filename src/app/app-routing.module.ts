@@ -16,7 +16,8 @@ export const appRoutes: Route[] = [
     //   layout: 'menu'
     // },
     children: [
-      { path: '', loadChildren: () => import('./modules/headers/headers.module').then(m => m.HeadersModule) },
+      // { path: '', loadChildren: () => import('./modules/headers/headers.module').then(m => m.HeadersModule) },
+      { path: '', loadChildren: () => import('./modules/body/body.module').then(m => m.BodyModule) },
     ]
   },
 ];

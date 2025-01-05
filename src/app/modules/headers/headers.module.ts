@@ -8,7 +8,7 @@ import { HeadersRoutingModule } from './headers.routing';
   declarations: [],
   imports: [
     CommonModule,
-    HeadersRoutingModule
+    HeadersRoutingModule,
   ]
 })
 export class HeadersModule { }

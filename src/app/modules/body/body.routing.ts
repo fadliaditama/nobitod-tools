@@ -9,7 +9,7 @@ const routes: Routes = [
         component: BodyComponent,
         children: [
             {
-                path: 'Downloader',
+                path: 'downloader',
                 component: DownloadListComponent
             },
             // {

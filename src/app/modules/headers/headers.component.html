@@ -6,8 +6,8 @@
 
         <div class="text-white">
             <div class="hidden md:flex md:flex-row md:gap-4">
-                <a href="home/Downloader">Downloader</a>
-                <a href="home/AI">AI</a>
+                <a routerLink="/home/downloader">Downloader</a>
+                <a routerLink="/home/AI">AI</a>
                 <p>Tools</p>
                 <p>Search</p>
             </div>
@@ -18,8 +18,9 @@
                 </button>
 
                 <div *ngIf="isMenuOpen" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
-                    <a href="home/Downloader" class="block px-4 py-2 text-gray-800 hover:bg-blue-100">Downloader</a>
-                    <a href="home/AI" class="block px-4 py-2 text-gray-800 hover:bg-blue-100">AI</a>
+                    <a routerLink="/home/downloader"
+                        class="block px-4 py-2 text-gray-800 hover:bg-blue-100">Downloader</a>
+                    <a routerLink="/home/AI" class="block px-4 py-2 text-gray-800 hover:bg-blue-100">AI</a>
                     <p class="block px-4 py-2 text-gray-800 hover:bg-blue-100">Tools</p>
                     <p class="block px-4 py-2 text-gray-800 hover:bg-blue-100">Search</p>
                 </div>
